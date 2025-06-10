@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   handle_word.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dong-hki <dong-hki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dong-hki <dong-hki@student.42gyeongsan.kr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 09:28:11 by dong-hki          #+#    #+#             */
-/*   Updated: 2025/04/25 13:11:37 by dong-hki         ###   ########.fr       */
+/*   Created: 2025/05/07 18:49:10 by dong-hki          #+#    #+#             */
+/*   Updated: 2025/05/08 14:48:07 by dong-hki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-extern void	ft_putchar_fd(char c, int fd);
-extern void	ft_putstr_fd(char *s, int fd);
+#ifndef HANDLE_WORD_H
+# define HANDLE_WORD_H
 
-void	ft_putendl_fd(char *s, int fd)
-{
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-}
+# include "tokenizer.h"
+
+int		is_boundary(char c);
+void	append_token(t_token **head, t_token **tail,
+			const char *start, size_t raw_len);
+
+#endif

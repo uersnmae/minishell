@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   env_manager.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dong-hki <dong-hki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hakslee <hakslee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 09:28:11 by dong-hki          #+#    #+#             */
-/*   Updated: 2025/04/25 13:11:37 by dong-hki         ###   ########.fr       */
+/*   Created: 2025/05/11 14:11:35 by dong-hki          #+#    #+#             */
+/*   Updated: 2025/05/16 14:50:16 by hakslee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-extern void	ft_putchar_fd(char c, int fd);
-extern void	ft_putstr_fd(char *s, int fd);
+#include "env_table.h"
 
-void	ft_putendl_fd(char *s, int fd)
+t_env_table	*env_init(char **envp)
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	return (env_table_create(211, envp));
+}
+
+void	env_free_envp(char **envp)
+{
+	size_t	i;
+
+	i = 0;
+	while (envp && envp[i])
+		free(envp[i++]);
+	free(envp);
 }

@@ -1,15 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tokenizer.c                                        :+:      :+:    :+:   */
+/*   tokenizer_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakslee <hakslee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 10:43:02 by dong-hki          #+#    #+#             */
-/*   Updated: 2025/05/08 14:41:38 by dong-hki         ###   ########.fr       */
+/*   Updated: 2025/05/27 22:51:16 by dong-hki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include <unistd.h>
 
 #include "libft.h"
@@ -38,6 +39,10 @@ static void	set_token_type(t_token *tok)
 				tok->type = TK_REDIR_APP;
 			else if (ft_strncmp(tok->value, "|", ft_strlen(tok->value)) == 0)
 				tok->type = TK_PIPE;
+			else if (ft_strncmp(tok->value, "&&", ft_strlen(tok->value)) == 0)
+				tok->type = TK_AND_IF;
+			else if (ft_strncmp(tok->value, "||", ft_strlen(tok->value)) == 0)
+				tok->type = TK_OR_IF;
 			else
 				tok->type = TK_ERROR;
 		}
@@ -49,18 +54,45 @@ static bool	check_quotes(const char *input)
 {
 	bool	in_single;
 	bool	in_double;
+	size_t	index;
 
+	index = 0;
 	in_single = false;
 	in_double = false;
-	while (*input)
+	while (input[index])
 	{
-		if (*input == '\'' && !in_double)
+		if (input[index] == '\'' && !in_double)
 			in_single = !in_single;
-		else if (*input == '"' && !in_single)
+		else if (input[index] == '"' && !in_single)
 			in_double = !in_double;
-		input++;
+		index++;
 	}
+	if (in_single || in_double)
+		ft_putendl_fd("invalid syntax: unmatched quote", STDERR_FILENO);
 	return (in_single || in_double);
+}
+
+static bool	check_paren(const char *input)
+{
+	size_t	paren_count;
+	size_t	index;
+
+	paren_count = 0;
+	index = 0;
+	while (input[index])
+	{
+		if (input[index] == '(')
+			paren_count++;
+		else if (input[index] == ')')
+			paren_count--;
+		index++;
+	}
+	if (paren_count != 0)
+	{
+		ft_putendl_fd("invalid syntax: unmatched parenthesis", STDERR_FILENO);
+		return (true);
+	}
+	return (false);
 }
 
 int	tokenize(const char *input, t_token **head)
@@ -70,11 +102,8 @@ int	tokenize(const char *input, t_token **head)
 
 	*head = NULL;
 	tail = NULL;
-	if (check_quotes(input))
-	{
-		ft_putendl_fd("invalid syntax: unmatched quote", STDERR_FILENO);
+	if (check_quotes(input) || check_paren(input))
 		return (0);
-	}
 	skip_space(&p);
 	while (*p)
 	{

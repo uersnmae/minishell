@@ -1,0 +1,272 @@
+[
+{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_print_tree.c -o /dev/null",
+  "file": "srcs/ast/ast_print_tree.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_parse_redirection.c -o /dev/null",
+  "file": "srcs/ast/ast_parse_redirection.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_parse_cmd.c -o /dev/null",
+  "file": "srcs/ast/ast_parse_cmd.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_parse_and_or.c -o /dev/null",
+  "file": "srcs/ast/ast_parse_and_or.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_parse_pipe.c -o /dev/null",
+  "file": "srcs/ast/ast_parse_pipe.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_parse_subshell.c -o /dev/null",
+  "file": "srcs/ast/ast_parse_subshell.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_parse_command_complete.c -o /dev/null",
+  "file": "srcs/ast/ast_parse_command_complete.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_utils.c -o /dev/null",
+  "file": "srcs/ast/ast_utils.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_node_create.c -o /dev/null",
+  "file": "srcs/ast/ast_node_create.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/ast/ast_create.c -o /dev/null",
+  "file": "srcs/ast/ast_create.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/input/get_input.c -o /dev/null",
+  "file": "srcs/input/get_input.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/tokenizer/tokenizer.c -o /dev/null",
+  "file": "srcs/tokenizer/tokenizer.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/tokenizer/handle_word.c -o /dev/null",
+  "file": "srcs/tokenizer/handle_word.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/tokenizer/tokenizer_utils.c -o /dev/null",
+  "file": "srcs/tokenizer/tokenizer_utils.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/tokenizer/handle_word_utils.c -o /dev/null",
+  "file": "srcs/tokenizer/handle_word_utils.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/tokenizer/handle_word_bonus.c -o /dev/null",
+  "file": "srcs/tokenizer/handle_word_bonus.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/tokenizer/tokenizer_bonus.c -o /dev/null",
+  "file": "srcs/tokenizer/tokenizer_bonus.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/env/env_table_utils.c -o /dev/null",
+  "file": "srcs/env/env_table_utils.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/env/env_table.c -o /dev/null",
+  "file": "srcs/env/env_table.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/env/env_manager.c -o /dev/null",
+  "file": "srcs/env/env_manager.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/env/env_handler.c -o /dev/null",
+  "file": "srcs/env/env_handler.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/minishell.c -o /dev/null",
+  "file": "srcs/minishell.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_env.c -o /dev/null",
+  "file": "srcs/builtins/builtin_env.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_cd.c -o /dev/null",
+  "file": "srcs/builtins/builtin_cd.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_pwd.c -o /dev/null",
+  "file": "srcs/builtins/builtin_pwd.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_utils.c -o /dev/null",
+  "file": "srcs/builtins/builtin_utils.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_exit.c -o /dev/null",
+  "file": "srcs/builtins/builtin_exit.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_echo.c -o /dev/null",
+  "file": "srcs/builtins/builtin_echo.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtins.c -o /dev/null",
+  "file": "srcs/builtins/builtins.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_core.c -o /dev/null",
+  "file": "srcs/builtins/builtin_core.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_exit_utils.c -o /dev/null",
+  "file": "srcs/builtins/builtin_exit_utils.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_export.c -o /dev/null",
+  "file": "srcs/builtins/builtin_export.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/builtins/builtin_unset.c -o /dev/null",
+  "file": "srcs/builtins/builtin_unset.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/run/run_cmd_line.c -o /dev/null",
+  "file": "srcs/run/run_cmd_line.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/run/run_ast.c -o /dev/null",
+  "file": "srcs/run/run_ast.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/signal/signal_handler.c -o /dev/null",
+  "file": "srcs/signal/signal_handler.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/expansion/expand_wildcard_arguments_bonus.c -o /dev/null",
+  "file": "srcs/expansion/expand_wildcard_arguments_bonus.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/expansion/expansion.c -o /dev/null",
+  "file": "srcs/expansion/expansion.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/expansion/expand_wildcard_utils_bonus.c -o /dev/null",
+  "file": "srcs/expansion/expand_wildcard_utils_bonus.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/expansion/expansion_utils.c -o /dev/null",
+  "file": "srcs/expansion/expansion_utils.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/utils/str_array_list.c -o /dev/null",
+  "file": "srcs/utils/str_array_list.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/utils/cleanup.c -o /dev/null",
+  "file": "srcs/utils/cleanup.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/flatten_pipeline.c -o /dev/null",
+  "file": "srcs/exec/flatten_pipeline.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/apply_redirection.c -o /dev/null",
+  "file": "srcs/exec/apply_redirection.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/exec_pipeline.c -o /dev/null",
+  "file": "srcs/exec/exec_pipeline.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/exec_subshell.c -o /dev/null",
+  "file": "srcs/exec/exec_subshell.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/free.c -o /dev/null",
+  "file": "srcs/exec/free.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/build_redirs_from_ast.c -o /dev/null",
+  "file": "srcs/exec/build_redirs_from_ast.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/build_argv_from_ast.c -o /dev/null",
+  "file": "srcs/exec/build_argv_from_ast.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/redirect_utils.c -o /dev/null",
+  "file": "srcs/exec/redirect_utils.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/exec_heredoc_child.c -o /dev/null",
+  "file": "srcs/exec/exec_heredoc_child.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/spawn_pipeline.c -o /dev/null",
+  "file": "srcs/exec/spawn_pipeline.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/exec_utils.c -o /dev/null",
+  "file": "srcs/exec/exec_utils.c"
+}
+,{
+  "directory": "/home/kim/42workspace/minishell",
+  "command": "cc -Wall -Wextra -Werror -Isrcs/tokenizer -Iincludes -Ilibft -Isrcs -c srcs/exec/flatten_jobs.c -o /dev/null",
+  "file": "srcs/exec/flatten_jobs.c"
+}
+]

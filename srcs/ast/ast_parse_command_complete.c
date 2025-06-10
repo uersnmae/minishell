@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ast_parse_command_complete.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dong-hki <dong-hki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hakslee <hakslee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 09:28:11 by dong-hki          #+#    #+#             */
-/*   Updated: 2025/04/25 13:11:37 by dong-hki         ###   ########.fr       */
+/*   Created: 2025/05/03 14:58:39 by dong-hki          #+#    #+#             */
+/*   Updated: 2025/05/06 17:42:44 by hakslee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-extern void	ft_putchar_fd(char c, int fd);
-extern void	ft_putstr_fd(char *s, int fd);
+#include "tokenizer.h"
+#include "ast.h"
+#include "minishell.h"
 
-void	ft_putendl_fd(char *s, int fd)
+t_ast_node	*ast_parse_complete_command(t_token **token)
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	return (ast_parse_pipe(token));
 }

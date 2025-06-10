@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   signal_handler.h                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dong-hki <dong-hki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hakslee <hakslee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 09:28:11 by dong-hki          #+#    #+#             */
-/*   Updated: 2025/04/25 13:11:37 by dong-hki         ###   ########.fr       */
+/*   Created: 2025/05/01 16:47:35 by hakslee           #+#    #+#             */
+/*   Updated: 2025/05/18 13:41:07 by dong-hki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-extern void	ft_putchar_fd(char c, int fd);
-extern void	ft_putstr_fd(char *s, int fd);
+#ifndef SIGNAL_HANDLER_H
+# define SIGNAL_HANDLER_H
 
-void	ft_putendl_fd(char *s, int fd)
-{
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-}
+void	sigint_handler(int signo);
+void	sigint_handler_heredoc(int signo);
+void	init_signals(void (*sig_handler)(int signo));
+void	set_child_signal(void);
+void	set_parent_signal(void);
+
+#endif

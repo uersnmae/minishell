@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   wildcard_bonus.h                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dong-hki <dong-hki@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hakslee <hakslee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 09:28:11 by dong-hki          #+#    #+#             */
-/*   Updated: 2025/04/25 13:11:37 by dong-hki         ###   ########.fr       */
+/*   Created: 2025/05/03 12:07:09 by dong-hki          #+#    #+#             */
+/*   Updated: 2025/05/05 21:33:55 by dong-hki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-extern void	ft_putchar_fd(char c, int fd);
-extern void	ft_putstr_fd(char *s, int fd);
+#ifndef WILDCARD_BONUS_H
+# define WILDCARD_BONUS_H
 
-void	ft_putendl_fd(char *s, int fd)
-{
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-}
+# include "libft.h"
+
+# define WILDCARD_ERROR	-1
+
+t_list	*expand_wildcard(const char *pattern);
+t_list	*expand_wildcard_arguments(t_list *argv);
+
+#endif
